@@ -64,4 +64,4 @@ def make_list(data):
 
 data_list = read_table_from_file(DATA_FILE_PATH,';')
 data_dict = make_dict(data_list, DATA_HEADER)
-print(make_list(data_dict))
+print(data_dict)

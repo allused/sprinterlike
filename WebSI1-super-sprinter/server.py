@@ -44,7 +44,6 @@ def story_id(id):
     pass
 
 if __name__ == '__main__':
-    data
     app.run(
         host='0.0.0.0',
         port=8000,

@@ -13,29 +13,18 @@
         <th height="20px">{{ title }}</th>
     </tr>
         {% endfor %}
+        {% for story in data %}
         <tr>
-            {% for story in data %}
-                <td>{{ story['id'] }}</td>
-                    </tr>
-                    <tr>
-                        <td><a href="/story">{{ story.title }}</a></td>
-                    </tr>
-                    <tr>
-                        <td>{{ story['user_story'] }}</td>
-                    </tr>
-                    <tr>
-                        <td>{{ story['acceptance_criteria'] }}</td>
-                    </tr>
-                    <tr>
-                        <td>{{ story['business_value'] }}</td>
-                    </tr>
-                    <tr>
-                        <td>{{ story['estimation'] }}</td>
-                    </tr>
-                    <tr>
-                        <td>{{ story['status'] }}</td>
-                    </tr>
-            {% endfor %}
+                <td>{{ story.id }}</td>
+                <td><a href="/story">{{ story.title }}</a></td>
+                <td>{{ story.user_story }}</td>
+                <td>{{ story.acceptance_criteria }}</td>
+                <td>{{ story.business_value }}</td>
+                <td>{{ story.estimation }}</td>
+                <td>{{ story.status }}</td>
+
+        </tr>
+{% endfor %}
 </table>
 </body>
 </html>
