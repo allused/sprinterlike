@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Sprinter 3000</title>
+</head>
+<body>
+<h1>Super Sprinter 3000</h1>
+<a href="/story">Add new story</a>
+<table>
+    <tr align="center">
+        {% for title in headers %}
+        <th height="20px">{{ title }}</th>
+    </tr>
+        {% endfor %}
+        <tr>
+            {% for story in data %}
+                <td>{{ story['id'] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/story">{{ story.title }}</a></td>
+                    </tr>
+                    <tr>
+                        <td>{{ story['user_story'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ story['acceptance_criteria'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ story['business_value'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ story['estimation'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ story['status'] }}</td>
+                    </tr>
+            {% endfor %}
+</table>
+</body>
+</html>

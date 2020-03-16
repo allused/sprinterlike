@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User stories</title>
+</head>
+<body>
+<h1>Add user story</h1>
+<form action="/story" method="post">
+    <label for="story_title">Story title:</label>
+    <input type="text" id="story_title" name="story_title" ><br>
+
+    <br><label for="user_story">User Story:</label>
+    <textarea id="user_story" name="user_story" rows="6" cols="50"></textarea><br>
+
+    <br><label for="acceptance_criteria">Acceptance criteria</label>
+    <textarea id="acceptance_criteria" name="acceptance" rows="10" cols="50"></textarea><br>
+
+    <br></br><label for="business_value">Business value:</label>
+    <input type="text" id="business_value" name="business_val" size="6"><br>
+
+    <br><label for="estimation">Estimation:</label>
+    <input type="text" id="estimation" name="estimation_hr" size="6"><br>
+
+    <br><button type="submit" id="submit_button" name="sub_button">Submit</button>
+
+
+</form>
+</body>
+</html>
